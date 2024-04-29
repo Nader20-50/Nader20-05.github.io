@@ -13,6 +13,7 @@
 }
 
 :root {
+    --back: #ffffff;
     --primary-color: #ffffff; /* white */
     --black: #000000; /* black */
     --black2:#111;
@@ -31,6 +32,7 @@
 }
 
 .darktheme {
+    --back: rgb(42, 41, 41);
     --primary-color: #1f1d1d; /* white */
     --black: #fff; /* black */
     --blue: blue; /* blue */
@@ -291,6 +293,7 @@
 } 
 
 .first{
+    background-color: var(--back);
     clear: both;
     padding: 100px;
     padding-top: 50px;
