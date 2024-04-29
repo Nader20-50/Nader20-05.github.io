@@ -303,6 +303,7 @@
 }
 
 .first-title{
+    background-color: rgb(42, 41, 41);
     color:var(--black);
     position: absolute;
     top: 190px;
