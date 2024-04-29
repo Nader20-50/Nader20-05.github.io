@@ -9,7 +9,7 @@
   }
   body{
     position: relative;
-    height: 330vh;
+    height: 360vh;
     background-color: var(--primary-color);
   }
 
@@ -524,20 +524,7 @@ hr {
     }
 }
 
-@media (max-width: 700px){
-    footer {
-        bottom: unset;
-    }
 
-    .col {
-        flex-basis: 100%;
-    }
-    
-    .col:nth-child(2),
-    .col:nth-child(3) {
-        flex-basis: 100%
-    }
-}
 @media (min-width: 1536px){
     .course-img img{
         margin-left: 100px;
@@ -560,6 +547,19 @@ hr {
     
 }
 }
+
+@media screen and (max-height: 1310px) {
+    body{
+        height: 370vh;
+    }
+    .course-img{
+        right: 20px;
+        top: 270px;
+    }
+    .card-container{
+        margin-top: 200px;
+    }
+}
 @media (min-width: 1200px){
     .course-img img{
         margin-left: 280px;
@@ -572,4 +572,18 @@ hr {
         margin-top: 400px;
     
 }
+}
+@media (max-width: 700px){
+    footer {
+        bottom: unset;
+    }
+
+    .col {
+        flex-basis: 100%;
+    }
+    
+    .col:nth-child(2),
+    .col:nth-child(3) {
+        flex-basis: 100%
+    }
 }
