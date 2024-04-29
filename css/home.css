@@ -306,7 +306,6 @@
 }
 
 .first-title{
-    color:var(--black);
     position: absolute;
     top: 190px;
     width: 350px;
@@ -316,7 +315,6 @@
 .first-title h1{
     margin: 0px 0px 50px 0px;
     font-size: 35px;
-    color; var(--black);
 }
 
 
@@ -329,7 +327,6 @@
     text-decoration: none;
     font-size: 12px;
     display:inline ;
-    color: var(--black);
 }
 
 .first-title a:hover{
