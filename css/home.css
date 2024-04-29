@@ -13,8 +13,6 @@
 }
 
 :root {
-    --back: #ffffff;
-    --primary-color1: #ffffff;
     --primary-color: #ffffff; /* white */
     --black: #000000; /* black */
     --black2:#111;
@@ -33,10 +31,8 @@
 }
 
 .darktheme {
-    --back: rgb(42, 41, 41);
-    --primary-color1: #ffffff;
     --primary-color: #1f1d1d; /* white */
-    --black: #ffffff; /* black */
+    --black: #fff; /* black */
     --blue: blue; /* blue */
     --font2: #fff;
     --c73d5e: #c73d5e; /* a shade of pink */
@@ -255,7 +251,7 @@
     font-family: aman;
     font-weight: 600;
     font-size:80px;
-    color: var(--primary-color1);
+    color: var(--fontwhite);
     position: absolute;
     top: 250px;
     left: 50px;
@@ -295,7 +291,6 @@
 } 
 
 .first{
-    background-color: var(--back);
     clear: both;
     padding: 100px;
     padding-top: 50px;
@@ -304,10 +299,11 @@
 }
 
 .first p{
-    color: var(--black);
+    color: var(--767676);
 }
 
 .first-title{
+    color:var(--font2);
     position: absolute;
     top: 190px;
     width: 350px;
@@ -315,7 +311,6 @@
 }
 
 .first-title h1{
-    color: var(--black);
     margin: 0px 0px 50px 0px;
     font-size: 35px;
 }
@@ -327,10 +322,10 @@
 }
 
 .first-title a{
-    color: var(--black);
     text-decoration: none;
     font-size: 12px;
     display:inline ;
+    color: var(--font2);
 }
 
 .first-title a:hover{
