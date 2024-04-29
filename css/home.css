@@ -313,6 +313,7 @@
 .first-title h1{
     margin: 0px 0px 50px 0px;
     font-size: 35px;
+    color; var(--black);
 }
 
 
