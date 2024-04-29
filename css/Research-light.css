@@ -1,0 +1,579 @@
+body{
+    font-weight: 1000;
+}
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: normal;
+    margin: 0;
+    background: #fff;
+    overflow-x: hidden;
+}
+/* navbar */
+#nav{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    transition: .4s;
+    z-index: 2;
+    margin-top:-20px
+}
+.one img{
+    padding-left: 10px;
+    margin-top: 20px;
+    height: 68.75px;
+    width: 200px;
+}
+.two{
+    padding-top: 30px;
+    padding-bottom: auto;
+    display: flex;
+    justify-content: end;
+}
+.two a{
+    color: #121a74;
+    text-decoration: none;
+    padding-right: 20px;
+    padding-top: 23px;
+}
+.two a:first-child{
+    font-size: 30px;
+    padding-top: 28px;
+}
+
+.two a{
+    color: #363636;
+    font-size: 35px;
+    margin-right: 30px;
+    transition: .4s;
+}
+.two a:hover{
+    color: #16189e;
+}
+
+.two a:last-child {
+    font-size: 40px;
+}
+/*overlay or menu in nav*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: #fffcfc;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #310bd8;
+    display: block;
+    transition: 0.6s;
+  }
+  
+  .sidenav a:hover {
+    color: #000000;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+/* end navbar */
+
+/* landing */
+.landing-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+.landing {
+    background-image: url("../images/Research.jpg");
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 64px);
+    position: relative;
+    min-width: 900px;
+    max-width: 100%;
+    z-index: -1;
+}
+
+.landing:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #122D48 0%, rgba(18, 45, 72, 0) 100%);
+    mix-blend-mode: multiply;
+    opacity: 0.9;
+}
+
+.landing .container1 {
+    position: absolute;
+    z-index: 2;
+    bottom: 80px;
+    left: 0;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    top: auto;
+}
+
+.landing .container1 h1{
+    color: #fff;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.09;
+    margin: 0;
+    padding-left: 0;
+}
+.landing .container1 p {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 22px;
+    line-height: 1.22;
+    font-weight: 600; 
+    max-width: 500px;
+}
+
+    /* end landing */
+.continer{ 
+    padding-top: 10%; 
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 2000px;
+}
+@media (min-width: 768px){
+    .continer{
+        width: 750px;
+    }
+}
+@media (min-width: 992px){
+    .continer{
+        width: 970px;
+    }
+}
+@media (min-width: 1200px){
+    .continer{
+        width: 1170px;
+    }
+}
+main{
+    display: grid;
+    grid-template-columns: 30% 1fr;
+}
+
+    /*start of sidebar */
+
+#sidebar {
+    /*border: 20px solid rgb(255, 0, 0);*/
+    padding-top: 20px;
+    width: 250px;
+}
+
+#sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 15%;
+    top: 15%;
+    z-index: 1;
+}
+#sidebar li {
+    margin-bottom: 10px;
+    
+}
+
+#sidebar li a {
+    background-color: #1b1fe3;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 14px;
+    transition: all 0.6s ease;
+    border-radius: 20px;
+}
+
+#sidebar li a:hover {
+    background-color: #131112;
+    color: #ffffff; 
+    transform: translatey(-5px);
+    border-radius: 20px;
+}
+    
+/* end of sidebar */
+
+/* Research start */
+
+#Research1 h2{
+    text-align: center;
+    color: #000000;
+    margin-top: 10px;
+}
+    
+#Research1 p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: .4s;
+    height: 50px;
+    text-align: center;
+}
+#Research1 p:hover{
+    font-size: 20px;
+}
+
+#Research1 ul {
+    list-style: none;
+    padding: 0;
+    display: none;
+}
+
+#Research1 li {
+    text-align: center;
+    background-color: #45a2ff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: transform 0.6s;
+    transition: .8s;
+}
+
+#Research1 li:hover {
+    transform: scale(1.05);
+    background-color: #3c4d60;
+    cursor: pointer;
+}
+#Research1 li:before {
+    content: '🔬';
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.6s ease;
+}
+#Research1 li:hover:before {
+    transform: rotate(360deg);
+}
+        /* Research end */
+        /* start master thesese */
+
+.master_theses{
+    color: #000000;
+    text-align: center;
+}
+
+.Master-these {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 2px 15px rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    overflow: hidden;;
+    margin: 25px 0;
+}
+
+.Master-these thead tr {
+    background-color: #2600ff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.Master-these th,
+.Master-these td {
+    padding: 12px 15px;
+}
+
+.Master-these tbody tr {
+    border-bottom: 2px solid #dddddd;
+    transition: .5s;
+}
+
+.Master-these tbody tr:nth-of-type(even) {
+    background-color: #e1e1e1;
+    transition: .5s;
+}
+
+.Master-these tbody tr:last-of-type {
+    border-bottom: 2px solid #2600ff;
+}
+
+.Master-these tbody tr.active-row {
+    font-weight: bold;
+    color: #001712;
+}
+
+.Master-these tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.Master-these th,
+.Master-these td {
+    font-size: 1em;
+}
+
+.Master-these thead th:first-child {
+    border-top-left-radius: 5px;
+}
+
+.Master-these thead th:last-child {
+    border-top-right-radius: 5px;
+}
+
+    /* end master thesese */
+        /* PhD start */  
+.Phd-theses{
+    color: #000000;
+    text-align: center;
+}
+.PhD-theses {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 2px 15px rgba(255, 250, 250, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 25px 0;
+}
+.PhD-theses thead tr {
+    background-color: #2600ff;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.PhD-theses th,
+.PhD-theses td {
+    padding: 12px 15px;
+}
+
+.PhD-theses tbody tr {
+    border-bottom: 1px solid #dddddd;
+    transition: .5s;
+}
+
+.PhD-theses tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.PhD-theses tbody tr:last-of-type {
+    border-bottom: 2px solid #2600ff;
+}
+
+.PhD-theses tbody tr.active-row {
+    font-weight: bold;
+    color: #170098;
+}
+
+.PhD-theses tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.PhD-theses th,
+.PhD-theses td {
+    color: #000000;
+    font-size: 0.9em;
+}
+.PhD-theses thead th:first-child {
+    border-top-left-radius: 5px;
+}
+
+.PhD-theses thead th:last-child {
+    border-top-right-radius: 5px;
+}
+
+.PhD-theses tfoot td {
+    font-size: 0.8em;
+    font-style: italic;
+    padding: 5px;
+    background-color: #170098;
+    color: #ffffff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+    /* PhD End */
+
+    /* the "This section is under construction" section */
+
+    @keyframes floatAnimation {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-30px);
+        }
+    }
+    #Published-papers{
+            text-align: center;
+            animation: floatAnimation 2s ease-in-out infinite;
+    }
+    #Published-papers img{
+            max-width: 95%;
+            height: auto;
+            animation: floatAnimation 2s ease-in-out infinite;
+    }
+    .para{
+        margin-bottom: 9%;
+        font-size: 45px;
+        text-align: center;
+        padding-bottom: 20px;
+        color: #000000;
+    }
+    #conferences{
+            text-align: center;
+            animation: floatAnimation 3s ease-in-out infinite;
+    }
+    #conferences img{
+            max-width: 95%;
+            height: auto;
+            animation: floatAnimation 3s ease-in-out infinite;
+    }
+    .audio{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .audio button {
+        padding: 10px 20px;
+        margin: 5px;
+        border: none;
+        background-color: #1b1fe3;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all .8s;
+        border-radius: 20px;
+
+    }
+
+    .audio button:hover {
+        background-color: #000000;
+        transform: translatey(-5px);
+    }
+    .musik{
+        padding-right: 5px;
+    }
+    /* footer */
+        .footer {
+            margin-top: 100px;
+            background-color: #16189e;
+            color: white;
+        }
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(4,25%);
+        }
+        .footer-logo {
+            color: #0000007d;
+            font-size: 2em;
+            font-weight: bold;
+            padding-left: 34px;
+            padding-top: 83px;
+        }
+        .footer-nav {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-nav li {
+            padding: 5px 0;
+        }
+        .footer-nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.6s ease;
+            font-size: 25px;
+        }
+        .footer-nav a:hover {
+            color: #e06004;
+        }
+        .footer-social-icons{
+            padding-top: 50px;
+        }
+        .footer-social-icons ul{
+            list-style: none;
+            padding-left: 0;
+            font-size: 10px;
+        }
+        .footer-social-icons li{
+            text-decoration: none;
+            margin-top: 19px;
+            text-align: center;
+        }
+        .footer-social-icons a {
+            color: white;
+            font-size: 40px;
+            display: block;
+            transition: color 0.6s ease;
+        }
+        .footer-social-icons a:hover {
+            color: #e06004;
+        }
+        .Copyright{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color:rgb(15, 15, 101);
+            text-align:center;
+            color: aliceblue; height: 100%;
+        }
+        .contact{
+            padding-top: 50px;
+        }
+        .contact-info ul{
+            list-style: none;
+            padding-left: 0;
+            font-size: 10px;
+        }
+        .contact-info ul li{
+            text-decoration: none;
+            margin-top: 19px;
+        }
+        .contact-info ul li a{
+            text-decoration: none;
+            font-size: 10px;
+            color: rgb(7, 122, 26);
+            transition: .5s;
+        }
+        .contact-info ul li a:hover{
+            font-size: 15px;
+        }
+        .contact-info ul li a::before{
+            content: "📧";
+        }
+
