@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/departments.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>Computer Science Departments</title>
+    <script src="cs.js"></script>
+</head>
+
+<body>
+    <section class="main">
+    <header>
+        <nav class="navigiation">
+            <a href="home.html">Home</a>
+            <a href="#CS-Department">CS Department</a>
+            <a href="#IT-Department">IT Department</a>
+            <a href="#IS-Department">IS Department</a>
+        </nav>
+    </header>
+    <div class="home-title">
+            <h1>Departmens</h1>
+            <h2>of computer science</h2>
+    </div>
+    </section>
+    <div class="department-color">
+    <section id="CS-Department" class="csd">
+        <div class="cs">
+            <h2 class="title">
+                Computer Science Department
+            </h2>
+        </div>  
+        <div class="cs-content">
+
+        <h3 class="color" id="CS-BRIEF" >
+            <button type="button" onclick="toggleParagraph('dep-brief1')" class="btn">
+                Department Brief
+            </button>
+        </h3>
+        <br>
+        <p id="dep-brief1" class="hidden"><b>
+            The Department of computer science is concerned with teaching the basics of computer science,
+            and what this requires from a study of logical design and computer mathematics.<br>
+            The Department is also concerned with teaching software of its various types,
+            whether it is system software or application software,
+            as well as artificial intelligence.</b>        
+        </p>
+        <br>
+        <hr>
+        <br>
+        <h3 class="color">
+            <button type="button" onclick="toggleParagraph('study-pro1')" class="btn">
+                Study Programs
+            </button>
+        </h3>
+        <br>
+        <p class="hidden" id="study-pro1"><b>
+            The Department of Computer Science at the College of Computing and Artificial Intelligence offers a<br>
+            computer science program for the undergraduate level</b>
+        </p>
+        <br>
+        <hr>
+        <br>
+        <h3 class="color" id="#">
+            <a href="stuff.html"><button class="btn">
+                Stuff Members
+                </button></a>
+        </h3>
+        <br>
+        <hr>
+        <br>
+        <h3 class="color">
+        <button type="button" onclick="toggleParagraph('news1')" class="btn">
+            Department News
+        </button>
+        </h3><br>
+        <ul class="hidden" id="news1">
+            <li>Briefings January</li>
+            <li>Briefings February</li>
+        </ul>
+        </div> 
+    <section id="IT-Department" class="isd">
+        <div class="it">
+            <h2 class="title">
+                Information Technology Department
+            </h2>
+        </div>
+        <div class="it-content">
+            <h3 class="color">
+                <button type="button" onclick="toggleParagraph('dep-brief2')" class="btn">
+                Department Brief
+                </button>
+            </h3>
+            <br>
+            <p class="hidden" id="dep-brief2"><b>
+                The Department of Information Technology is concerned with teaching the basics of information technology,
+                pattern recognition, letters and software digital signal processing, computer vision, multimedia,
+                information engineering and information networks as well as
+                computer drawing systems, image processing and microprocessors.</b>
+            </p>
+            <br>
+            <hr>
+            <br>
+                <h3 class="color">
+                    <button type="button" onclick="toggleParagraph('study-pro2')" class="btn">
+                    Study Programs
+                    </button>
+                </h3><br>
+                <p id="study-pro2" class="hidden"><b>
+                    The Information Technology Department at the College of Computing and 
+                    Artificial Intelligence offers an undergraduate Information Technology program</p>
+                </b>
+                    <br>
+                <hr>
+                <br>
+                <h3 class="color" >
+                    <a href="stuff.html"><button class="btn">
+                        Stuff Members
+                        </button></a>
+                </h3>
+                <br>
+                <hr>
+                <br>
+                <h3 class="color">
+                    <button type="button" onclick="toggleParagraph('news2')" class="btn">
+                    Department News
+                    </button>
+                </h3>
+                <img src="pic/cs.jpeg" class="hidden" id="news2" width="600" >
+        </div>
+    </section>
+    <section id="IS-Department" class="isd">
+        <div class="is">
+            <h2 class="title">
+                Information System Department
+            </h2>
+        </div>  
+        <div class="is-content"> 
+        <h3 class="color">
+            <button type="button" onclick="toggleParagraph('dep-brief3')" class="btn">
+            Department Brief
+            </button>
+        </h3><br>
+        <p id="dep-brief3" class="hidden"><b>
+            The department of Information Systems is interested in teaching 
+            the basics of information systems, analysis, design and applications,
+            both current and advanced, and the section is also concerned with teaching office automation
+            and database systems of various types,data mining and knowledge discovery, 
+            and management of information centers. The department of Information Systems
+            is the link between the disciplines of computer science and the various fields of work,
+            which helps students gain knowledge and skills,
+            to analyze and design information systems in any of the governmental or private business organizations and institutions..
+        </b>
+        </p>
+        <br>
+        <hr>
+        <br>
+        <h3 class="color">
+            <button type="button" onclick="toggleParagraph('study-pro3')" class="btn">
+            Study Programs
+            </button>
+        </h3><br>
+        <p id="study-pro3" class="hidden"><b>
+            The Department of Information Systems at the College of Computing and Artificial Intelligence offers three study programs 
+            for the undergraduate stage as follows: Information Systems Program,
+            Software Engineering Program, and Medical Informatics Program</b>
+        </p>
+        <br>
+        <hr>
+        <br>
+        <h3 class="color" id="#">
+            <a href="stuff.html"><button class="btn">
+                Stuff Members
+                </button></a>
+        </h3>
+        <br>
+        <hr>
+        <br>
+        <h3 class="color">
+            <button type="button" onclick="toggleParagraph('news3')" class="btn">
+            Department News
+            </button>
+        </h3><br>
+        <img src="pic/cs.jpeg" class="hidden" id="news3" width="600">
+        </div>
+    </section>
+    </div>
+    <script>
+        function toggleParagraph(id) {
+            const paragraph = document.getElementById(id);
+            paragraph.style.display = paragraph.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+    <footer class="footer">
+        <div class="container-2">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Address</h4>
+                    <ul>
+                        <li><a href="">helwan Road<br>
+                            Ain Helwan, PIN 560066<br>Eygpt</a></li>
+                        <li><a>info@fci.helwan.edu.eg</a></li>
+                        <li><a>+20 2 2558 0746 Ext. 1039</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="index1.html">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Nwes</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>News letter</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </section>
+    <script src="cs.js"></script>
+</body>
+</html>

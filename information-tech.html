@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Computer science</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+  <link href="css/info-tech.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    /* Add this style block for testing */
+    .content {
+      display: none; /* Initially hide content */
+    }
+  </style>
+
+</head>
+<body class="body3">
+    <div class="home-nav">
+        <div class="relative-nav">
+        <div class="iconhelwan">
+            <img src="./img/fcai_logo_final_en.png" alt="">
+        </div>
+        <ul>
+            <li id="icon1">
+                <a href="javascript:void(0)" onclick="swapStyle();">
+                    <i class="fa-solid fa-moon"></i>
+                </a>
+            </li>
+            
+            <script>
+                function swapStyle() {
+                    var body = document.body;
+                    var icon = document.querySelector('.fa-moon');
+            
+                    body.classList.toggle("darktheme");
+                    
+                    if (icon) {
+                        icon.classList.remove('fa-moon');
+                        icon.classList.add('fa-sun');
+                    } else {
+                        icon = document.querySelector('.fa-sun');
+                        icon.classList.remove('fa-sun');
+                        icon.classList.add('fa-moon');
+                    }
+                }
+            </script><li><a href="">in.hu</a></li>
+            <li>
+                <a href="javascript:void(0)" class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars"></i>MENU</a>
+            </li> </ul>
+              <div id="myNav" class="menu">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> <i class="fa-solid fa-x"></i> </a>
+                    <div class="menu-continer">
+                        <div class="menu-content">
+                          <a href="home.html">Home</a>
+                          <a href="index1.html">ABOUT US</a>
+                          <a href="acadimc.html">ACADEMIC</a>
+                          <a href="index2.html">Postgraduate Studies</a>
+                          <a href="Reserach.html">RESEARCH</a> 
+                          <a href="departments.html">Departments</a>
+                          <a href="stuff.html">Stuff</a> 
+            
+                            <script>
+                                function openNav() {
+                                    document.getElementById("myNav").style.width = "100%";
+                                }
+                                
+                                function closeNav() {
+                                    document.getElementById("myNav").style.width = "0%";
+                                }
+                            </script>
+                        </div>
+                        <a href="login.html"  class="loginbtn"><button class="btn-0">
+                        LOGIN</button></a> 
+                    </div>
+                </div>
+
+        <button class="hero-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div> 
+  <div class="hero">
+    <div class="banner">
+      <h1>Information Technology Program
+        <style>
+          h1{
+            color : white;
+            font-size: 50px;
+          }
+        </style>
+      </h1>
+    </div>
+    <div class="whitepart">
+    <div id="content1" class="content"><h2>About program</h2>
+      <p>The program of Information Technology is concerned with teaching the basics of information technology, pattern recognition, letters and software, digital signal processing, computer vision, multimedia, information engineering and information networks as well as computer drawing systems, image processing and microprocessors.</p></div>
+    <div id="content2" class="content">
+      <h2>Program descrpition
+        <!-- <style>
+          h2{
+           color : catdetblue;
+            font-size : 40px;
+          }
+        </style> -->
+      </h2>
+      <ol>
+        <li>
+          <span> programme Title:</span>Information Technology
+        </li><br>
+        <li>
+          <span> Programme Type:</span> Single
+        </li><br>
+        <li>
+          <span> Department(s):</span>Information Technology
+        </li><br>
+        <li>
+          <span> Coordinator:</span> Assoc.Prof.  Rowida Sadek </li><br>
+      </ol>
+      </div>
+      <div id="content3" class="content">
+        <div class="table">
+         <div class="wrapper">
+           <h2>Major sheet</h2>
+           <table>
+             <caption>
+               Mandatory courses
+             </caption>
+             <tr>
+               <th>Title</th>
+               <th>Code</th>
+               <th>Credit hours</th>
+             </tr>
+
+             <tr>
+               <td data-cell="title">Concepts of Programming Languages</td>
+               <td data-cell="code">CS 317</td>
+               <td data-cell="hours">3</td>
+             </tr>
+             <tr>
+               <td data-cell="title">Computer Organization</td>
+               <td data-cell="code">CS 322</td>
+               <td data-cell="hours">3</td>
+             </tr>
+             <tr>
+               <td data-cell="title">Computer Graphics – 1</td>
+               <td data-cell="code">IT 331</td>
+               <td data-cell="hours">3</td>
+             </tr>
+             <tr>
+               <td data-cell="title">Operating Systems – 2</td>
+               <td data-cell="code">CS 342</td>
+               <td data-cell="hours">3</td>
+             </tr>
+             <tr>
+               <td data-cell="title">Software Engineering – 2</td>
+               <td data-cell="code">CS 352</td>
+               <td data-cell="hours">3</td>
+             </tr>
+             <tr>
+               <td data-cell="title">Multimedia</td>
+               <td data-cell="code">IT 433</td>
+               <td data-cell="hours">3</td>
+             </tr>
+             <tr>
+               <td data-cell="title">Artificial Intelligence</td>
+               <td data-cell="code">CS 361</td>
+               <td data-cell="hours">3</td>
+             </tr>
+             <tr>
+               <td data-cell="title">Compilers</td>
+               <td data-cell="code">CS 419</td>
+               <td data-cell="hours">3</td>
+             </tr>
+             <tr>
+               <td data-cell="title">Project</td>
+               <td data-cell="code">CS 498</td>
+               <td data-cell="hours">6</td>
+             </tr>
+           </table>
+         </div>
+      </div>
+    </div>
+    <div class="course-info">
+      <div class="tabs">
+            <button class="tab" onclick="changeContent('content1')">About program</button><br>
+            <button class="tab" onclick="changeContent('content2')">Program Describtion </button><br>
+            <button class="tab" onclick="changeContent('content3')">Major sheet </button><br>
+       </div>
+    </div>
+
+    <script>
+      // Initially display content1
+      document.getElementById('content1').style.display = 'block';
+
+      function changeContent(contentId) {
+        var contents = document.getElementsByClassName('content');
+        for (var i = 0; i < contents.length; i++) {
+          contents[i].style.display = 'none';
+        }
+        document.getElementById(contentId).style.display = 'block';
+      }
+    </script>
+  </div>
+
+  </div>
+
+ <section class="foot">
+        <footer>
+            <div class="row">
+                
+                <div class="col">
+                    <div class="logoH">
+                        <img src="./img/footer_logo3.png" alt="">
+                    </div>
+                </div>
+    
+                <div class="col">
+                    <h3>Address <div class="underline"><span></span></div></h3>
+                    <p>ITPL Road</p>
+                    <p>Whitefield, Bangalore</p>
+                    <p>Ain Helwan, PIN 560066, Eygpt</p>
+                    <p class="email-id"><i class="fa-solid fa-envelope"></i>info@fci.helwan.edu.eg</p>
+                    <h4>+20 2 2558 0746 Ext. 1039</h4>
+                </div>
+    
+                <div class="col">
+                    <h3>Links <div class="underline"><span></span></div></h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col">
+                    <h3>Newsletter <div class="underline"><span></span></div></h3>
+                    <form>
+                        <i class="far fa-envelope"></i>
+                        <input type="email" placeholder="Enter your email id" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+    
+                    <div class="social-icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-whatsapp"></i>
+                        <i class="fab fa-pinterest"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy;copyright 2024 FCAIH - All Rights Reserved</p>
+        </footer>
+    </section>
+
+</body>
+</html>

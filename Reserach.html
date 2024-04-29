@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        FCAIH-HU
+    </title>
+    <link rel="icon" href="images/favicon.png">
+    <link id="styleSheet" rel="stylesheet" type="text/css" href="css/Research-light.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+    #contentContainer div {
+        display: none;
+        opacity: 0;
+        transition: opacity 0.8s ease;
+    }
+    #contentContainer div.active {
+        display: block;
+        opacity: 1;
+    }
+    #contentContainer div {
+        display: none;
+    }
+    #contentContainer div.active {
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <nav>
+            <div id="nav">
+                <div class="one">
+                    <a href="home.html"><img src="images/fcai_logo_final_en.png" alt="university logo"></a>
+                </div>
+                <div id="main" class="two">
+                    <a href="#search"><i class="bi bi-search"></i></a>
+                    <a href=""><i id="moon" onclick="swapStyle(); return false;" class="fa-solid fa-moon"></i></a>
+                    <a href="#menu"><i class="fa-solid fa-bars"  onclick="openNav()"></i></a>
+                </div>
+            </div>
+        </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></a>
+            <div class="menu-continer">
+                <div class="menu-content">
+                    <a href="home.html">Home</a>
+                    <a href="index1.html">ABOUT US</a>
+                    <a href="acadimc.html">ACADEMIC</a>
+                    <a href="index2.html">Postgraduate Studies</a>
+                    <a href="Reserach.html">RESEARCH</a> 
+                    <a href="departments.html">Departments</a>
+                    <a href="stuff.html">Stuff</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="landing-continer">
+        <!-- start landing -->
+        <div class="landing">
+            <div class="container1">
+                <h1>Research</h1>
+                <p>The Faculty of Computers and Artificial Intelligence at Helwan University is renowned for its expertise in computer science and AI, featuring distinguished professors and extensive research in these domains</p>
+            </div>
+        </div>
+    </div>
+    <!-- audio -->
+    <div class="audio">
+        <button onclick="stopBackgroundSound()"><span class="musik">music off</span><i class="fa-solid fa-pause"></i></button>
+        <button onclick="startBackgroundSound()"><span class="musik">music on</span><i class="fa-solid fa-play"></i></button>
+    </div>
+    <audio>
+        <source src="audio/Sunday Noise & Al Sharif - U Got Me.mp3">
+    </audio>
+    <main class="continer">
+        <div id="sidebar">
+            <!-- Add your sidebar links here -->
+            <ul>
+                <li><a href="#Research1" onclick="showContent('Research1')">Research Group</a></li>
+                <li><a href="#Master-these" onclick="showContent('Master-these')">Master theses list</a></li>
+                <li><a href="#Phd-theses" onclick="showContent('Phd-theses')">Phd theses list</a></li>
+                <li><a href="#Published-papers" onclick="showContent('Published-papers')">Published papers lists</a></li>
+                <li><a href="#conferences" onclick="showContent('conferences')">conferences</a></li>
+                <li><a href="https://fcihib.journals.ekb.eg/" target="_blank">Scientific Journal</a></li>              
+            </ul>
+        </div>
+        <div id="contentContainer">
+            <div id="Research1" class="active">    
+                    <h2>Research Groups</h2>
+                                    <br><br>
+                                    <p>1. Human Computer Interaction Research Group</p>
+                                    <ul>
+                                        <li>Prof. Dr. Mostafa Sami</li>
+                                        <li>Dr. Waleed Yousef (Coordinator)</li>
+                                        <li>Dr. Omar Hamd</li>
+                                        <li>Dr. Ayman Ezzat</li>
+                                    </ul>
+                                    <p>2. Computational Linguistics Research Group</p>
+                                    <ul>
+                                        <li>Prof. Dr. Mohamed Belal</li>
+                                        <li>Assoc. Prof. Mohamed Haggag</li>
+                                        <li>Dr. Amal Abou Tabl (Coordinator)</li>
+                                        <li>Dr. Yasser Hifny</li>
+                                    </ul>
+                                    <p>3. Cloud Computing Research Group</p>
+                                    <ul>
+                                        <li>Cloud Computing Research Group</li>
+                                        <li>Prof. Dr. Aliaa Youssef</li>
+                                        <li>Assoc. Prof. Maha Attia</li>
+                                        <li>Assoc. Prof. Mahmoud El-Khouly</li>
+                                        <li>Dr. Hossam Shamardan</li>
+                                        <li>Dr. Mona Nasr</li>
+                                        <li>Dr. Mohamed Marie</li>
+                                        <li>Dr. Laila Abdel-Latif</li>
+                                        <li>Dr. Manal Abd El Kader</li>
+                                    </ul>
+                                    <p>4. Data Mining Research Group</p>
+                                    <ul>
+                                        <li>Prof. Dr. Ahmed Sharaf Eldin Ahmed</li>
+                                        <li>Prof. Dr. Mohamed Belal</li>
+                                        <li>Prof. Dr. Hawaf Abdalhakim</li>
+                                        <li>Assoc. Prof. Mohamed Haggag</li>
+                                        <li>Assoc. Prof. Maha Attia</li>
+                                        <li>Dr. Laila Abd El Latif (Coordinator)</li>
+                                        <li>Dr. Mohamed Marie</li>
+                                        <li>Dr. Hossam Shamardan</li>
+                                        <li>Dr. Yasser Hifny</li>
+                                        <li>Dr. Shaimaa Ezzat</li>
+                                    </ul>
+                                    <p>5. High Performance Computing Research Group</p>
+                                    <ul>
+                                        <li>Dr. Yasser Hifny</li>
+                                        <li>Dr. Amal Abou Tabl</li>
+                                    </ul>
+                                    <p>6. Soft Computing Research Group</p>
+                                    <ul>
+                                        <li>Prof. Dr. Iraqy Khalifa</li>
+                                        <li>Prof. Dr. Mohamed Belal</li>
+                                        <li>Dr. Hossam Shamardan</li>
+                                    
+                                    </ul>
+                                    <p>7. Medical & Bio-Informatics Research Group</p>
+                                    <ul>
+                                        <li>Prof. Dr. Ahmed Sharaf Eldin Ahmed (Coordinator)</li>
+                                        <li>Prof. Dr. Aliaa Youssef</li>
+                                        <li>Prof. Dr. Samar Kasem (Faculty of Medicine, Ain Shams University)</li>
+                                        <li>Prof. Dr. Brendan Orner (University of London, UK)</li>
+                                        <li>Prof. Dr. Tayseer Soliman (Faculty of Computers, Assiut University)</li>
+                                        <li>Assoc. Prof. Maha Attia</li>
+                                        <li>Dr. Amany Abdou</li>
+                                        <li>Dr. Shaimaa Rashad</li>
+                                        <li>Dr. Wessam El Behaidy</li>
+                                        <li>Mr. Amr Elhosary</li>
+                                        <li>Ms. Nafisa Mohamed</li>
+                                        <li>Ms. Marwa Gharib</li>
+                                    </ul>
+                                    <p>8. Business Intelligence Research Group</p>
+                                    <ul>
+                                        <li>Prof. Dr. Ahmed Sharaf Eldin Ahmed</li>
+                                        <li>Assoc. Prof. Maha Attia</li>
+                                        <li>Dr. Mona Nasr</li>
+                                        <li>Dr. Ahmed Bahaa (coordinator)</li>
+                                        <li>Dr. Manal Abd El Kader</li>
+                                        
+                                    </ul>
+                                    <p>9. Image Processing Research Group</p>
+                                    <ul>
+                                        <li>Prof. Dr. Aliaa Youssef</li>
+                                        <li>Dr. Yasser Hifny</li>
+                                        <li>Dr. Hossam Shamardan</li>
+                                        <li>Dr. Wessam El Behaidy</li>
+                                    </ul>
+                                    <p>10. Medical Engineering Research Group</p>
+                                    <ul>
+                                        <li>Prof. Dr. Aliaa Youssef</li>
+                                    </ul>
+                                    <p>11. Security Research Group</p>
+                                    <ul>
+                                        <li>Assoc. Prof. Maha Attia</li>
+                                        <li>Assoc. Prof. Mahmoud El-Khouly</li>
+                                        <li>Dr. Hossam Shamardan</li>
+                                        <li>Dr. Mahmoud Mostafa (Coordinator)</li>
+                                    </ul>
+                                    <p>12. Data Management Research Group</p>
+                                    <ul>
+                                        <li>Prof. Dr. Ahmed Sharaf Eldin Ahmed (Coordinator)</li>
+                                        <li>Mrs. Nermin Abd El Hakim</li>
+                                        <li>Prof. Dr. Reda Ammar (University of Connecticut, USA)</li>
+                                        <li>Dr. Doaa Saad</li>
+                                        <li>Dr. Sherif Kholeif</li>
+                                        <li>Dr. Laila Abd El Latif</li>
+                                        <li>Dr. Shaimaa Ezzat</li>
+                                        <li>Dr. Manal Abd El Kader</li>
+                                        <li>Mrs. Hanan Fahm</li>
+                                        
+                                    </ul>
+                                    <p>13. Conceptual Mapping Research Group</p>
+                                    <ul>
+                                        <li>Prof. Dr. Ahmed Sharaf Eldin Ahmed</li>
+                                        <li>Dr. Adel Elsayed (university of Bolton, UK) – (Coordinator)</li>
+                                        <li>Dr. Sahar Attia (Cairo University)</li>
+                                        <li>Dr. Mona Nasr</li>
+                                        <li>Dr. Ayman Khedr</li>
+                                        <li>Mrs. Aya Kamal</li>
+                                        <li>Mrs. Rania Elsayed</li>
+                                        <li>Mr. Mostafa Thabet</li>
+                                        <li>Ms. Sara Saad</li>
+                                        <li>Ms. Mai El Defrawy</li>
+                                    </ul>
+                                    <p>14. Knowledge Engineering Research Group</p>
+                                    <ul>
+                                        <li>Prof. Dr. Iraqy Khalifa</li>
+                                        <li>Prof. Dr. Mohamed Belal</li>
+                                        
+                                    </ul>
+                                    <p>15. Computer Arabization and Islamic Applications Research Group</p>
+                                    <ul>
+                                        <li>
+                                        Prof. Dr. Ahmed Sharaf Eldin Ahmed (Coordinator)</li>
+                                        <li>Prof. Dr. Mohamed Hammad (Faculty of Dar Eloloom, Cairo University)</li>
+                                        <li>Prof. Dr. Khalid Saber (Faculty of Dar Eloloom, Cairo University)</li>
+                                        <li>Prof. Dr. Shafik Aboseada (Faculty of Arabic Language, AlAzhar University)</li>
+                                        <li>Assoc. Prof. Maha Attia</li>
+                                        <li>Dr. Amany Abd El Samie</li>
+                                        <li>Dr. Amany Abdou</li>
+                                        <li>Dr. Mahmoud Mostafa</li>
+                                        <li>Dr. Shaimaa Rashad</li>
+                                        <li>Mrs. Hala Abolhamayl</li>
+                                    </ul>
+                                    <p>16. Information Security INFOSEC Research Group</p>
+                                    <ul>
+                                        <li>Assoc. Prof. Mahmoud El-Khouly</li>
+                                        <li>Dr. Mahmoud Mostafa (Coordinator)</li>
+                                        <li>Dr. Laila Abd-Ellatif</li>
+                                        <li>Dr. Shaimaa Ezzat</li>
+                                        <li>Dr. Marwa Salah Farhan</li>
+                                        <li></li>
+                                    </ul>
+                                    <p>17. Multi-Level Optimization Research Group</p>
+                                    <ul>
+                                        <li>Prof. Dr. Torky Sultan</li>
+                                        <li>Prof. Dr. Mohamed Belal</li>
+                                        <li>Assoc. Prof. Osama Emam</li>
+                                    </ul>
+                                    <p>18. Speech Processing and Machine Learning Research Group</p>
+                                    <ul>
+                                        <li>Prof. Dr. Aliaa Youssef</li>
+                                        <li>Dr. Yasser Hifny</li>
+                                    </ul>
+                                    <p>19. Intelligent Decision Support Systems IDSS Research Group</p>
+                                    <ul>
+                                        <li>Prof. Dr Hawaf Abdalhakim</li>
+                                    </ul>
+                                    <p>20. Mobile Computing Research Group</p>
+                                    <ul>
+                                        <li>Prof. Dr Hawaf Abdalhakim</li>
+                                    </ul>
+            </div>
+            <div id="Master-these">
+                <h1 class="master_theses">List of master theses</h1>
+                <table class="Master-these">
+                    <thead>
+                        <tr>
+                            <th>Researcher name</th>
+                            <th>Thesis Title</th>
+                            <th>Supervisors</th>
+                            <th>Date</th>
+                            <th>specialization</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Add master theses here -->
+                        <tr>
+                            <td>Mona Mahrous Ahmed</td>
+                            <td>Secured Sink Node WSN</td>
+                            <td>Prof.DR Moustafa Samy<br>Dr Hossam Shamrdan</td>
+                            <td>28-10-2016</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Sara Mohamed Ahmed Naiem</td>
+                            <td>Developing a computer system to measure the skills of software developers - "update"</td>
+                            <td>Assoc.Prof Mahmoud Abd el-Latif <br>Assoc.Prof Amany Abdo<br>DR Shaimaa Ezzat</td>
+                            <td>28-10-2015</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mohamed Badr Moustafa</td>
+                            <td>Development of efficient Quality Models for Critical Systems</td>
+                            <td>Prof.Dr Yehia Helmy<br>DR Laila Abe el-Latif</td>
+                            <td>27-5-2015</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Sara Medhat Mohamed</td>
+                            <td>Increasing the Productivity of Irradiation Facility Using Multi Objective Optimization Techniques</td>
+                            <td>prof.DR Aliaa Yousef<br>Assoc.Prof Ahmed Hassan kamel</td>
+                            <td>25-10-2015</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Naglaa Hosny Ibrahim</td>
+                            <td>On Stochastic Multi-Level Large Scale - Fractional Programming Problem</td>
+                            <td>Prof.DR Osama emamm<br>Assoc.Prof Amany Abdo</td>
+                            <td>21-5-2015</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Hanaa Mahmoud Hassan</td>
+                            <td>Mining of Hepatitis C Virus Data for Egyptians in the Newly<br>- Developed Database (HCVDBegy)<br></td>
+                            <td>Prof.Dr Ahmed Sharaf<br>Assoc.prof Amr Mohamed Said</td>
+                            <td>9-3-2016</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Salwa Osama</td>
+                            <td>Anomalous Child Behavior Detection In Ubiquitous Environments</td>
+                            <td>Prof.DR Moustafa Samy<br>Assoc.Prof Ayman Ezzay</td>
+                            <td>7-9-2016</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed Mohamdeen Fraag</td>
+                            <td>Abnormalities Detection in Digital - Mammography</td>
+                            <td>Prof.DR Moustafa Samy<br>Assoc.Prof Waleed Yousef</td>
+                            <td>2-6-2016</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Osama Basel GHazy</td>
+                            <td>A Cellular Neural Network-Based Model for<br>Edge Detection<br></td>
+                            <td>Prof.DR Mohamed Belal<br>Assoc.prof Hala Abd el-Galil</td>
+                            <td>10-8-2015</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed Magdy</td>
+                            <td>On Stochastic Large Scale Bi-Level Multi Objective Quadratic Programming Problem</td>
+                            <td>Prof.DR Osama Emam<br>DR Shaimaa Ezzat</td>
+                            <td>27-3-2016</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Enas Fathy</td>
+                            <td>Towards Agile Implementation of Test Maturity Model Integration (TMMI) Using Scrum Practices</td>
+                            <td>Assoc.Prof Mahmoud Abd el-Latif<br>Assoc.Prof Ahmed Bahaa</td>
+                            <td>7-8-2016</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Sara Elsayed Amin</td>
+                            <td>A Proposed Metric for Measuring Reusability Effectiveness of Learning Objects in Learning Environment</td>
+                            <td>Prof.DR Ayman Khedr<br>Assoc.Prof Mona Nasr<br></td>
+                            <td>27-5-2015</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Hend Saad Hafez</td>
+                            <td>Adaptive Business Process Management Model for Performance Enhancement</td>
+                            <td>Prof.DR Mohamed Haggag<br>Prof.DR Ayman Khedr<br></td>
+                            <td>28-10-2015</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Samr Fathy Mokhtar</td>
+                            <td>Ontology Based Emotion Detection</td>
+                            <td>Prof.DR Mohamed Haggag<br>DR Nahla</td>
+                            <td>18-5-2016</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Beshoy Fahmy</td>
+                            <td>Communication of Security Information and Event Management Systems for Cloud Environments</td>
+                            <td>Assoc.Prof Mahmoud EL khouly<br>DR Mahmoud Moustafa<br></td>
+                            <td>24-5-2016</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mohamed Farahat</td>
+                            <td>Use of Data Mining Techniques for Prediction of Response of Chronic HCV Genotype 4 Patients to DAAs</td>
+                            <td>Prof.Dr Ahmed Sharaf<br>Prof.Dr Smar Kasim<br>Assoc.Prof Amany Abdo</td>
+                            <td>8-3-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Lobna Abd el-Aziz</td>
+                            <td>Personal Integrated Electronic Health Record</td>
+                            <td>Prof.Dr Ahmed Sharaf<br>Assoc.Prof Mona Nasr</td>
+                            <td>9-3-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed Hesham Moustafa</td>
+                            <td>Intelligent Automatic Methodology for Detection and Containment of Smartphone Malware</td>
+                            <td>Prof.Dr Aliaa Yousef<br>Dr Marwa Abd el-Fattah</td>
+                            <td>20-11-2016</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Aya Hamdy</td>
+                            <td>Detection of Abnormal Driving Behavior in Ubiquitous Environment</td>
+                            <td>Prof.Dr Moustafa Samy<br>Assoc.Dr Ayman Ezzat</td>
+                            <td>7-9-2016</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ranin Abd el-Magid</td>
+                            <td>Treatment of Epilepsy Using Computer System</td>
+                            <td>Prof.Dr Atef Ghalwash<br>Dr Wesam Mohamed</td>
+                            <td>20-12-2016</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Nagwa Mawad</td>
+                            <td>An Evolutionary Creative-Design Approach for Water Flow Networks Design</td>
+                            <td>Prof.Dr Mohamed Belal</td>
+                            <td>1-2-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Rehab Allah Mohamed</td>
+                            <td>Modifying Unified Modeling Language to Support Aspect Oriented Software Development</td>
+                            <td>Prof.Dr Moustafa Samy<br>Prof.Dr Aml AboTabl</td>
+                            <td>29-12-2016</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Yasser Mohamed Saber</td>
+                            <td>Automatic Extraction of Ontology From Unstructured Text</td>
+                            <td>Prof.Dr Mohamed Belal<br>Assoc.prof Hala Abd el-Galil</td>
+                            <td>13-3-2017</td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Mohamed Elaraby</td>
+                            <td>Using Rough Multi-Level Linear Programming Technique to Improve Service Performance in Cloud</td>
+                            <td>Prof.Dr Mohamed Belal<br>Prof.Dr Osama Emam</td>
+                            <td>16-3-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Abd el-Karim Mohamed</td>
+                            <td>Arabic Lip Reading System</td>
+                            <td>Prof.Dr Mohamed Hagag<br>Assoc.prof Hala Abd el-Galil<br></td>
+                            <td>29-6-2016</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Salman Ali Hussein</td>
+                            <td>A Soft Computing Model for Electrical Power Load Forecasting</td>
+                            <td>Prof.Dr Mohamed Belal<br>Assoc.prof Hala Abd el-Galil</td>
+                            <td>13-7-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Hadder Sami</td>
+                            <td>Task Dependency Aware Scheduling Approach for Grid Computing</td>
+                            <td>Prof.Dr Mohamed Belal<br>Assoc.prof Hala Abd el-Galil</td>
+                            <td>10-7-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Noha Magdy</td>
+                            <td>On Fuzzy Multilevel Multi-Objective Quadratic Programming Problems</td>
+                            <td>Prof.Dr Osama Emam<br>Assoc.Prof Sherief abd el-Kader</td>
+                            <td>22-1-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Aml Fahim</td>
+                            <td>An Intelligent Tutoring Model for Mentally Handicapped Children</td>
+                            <td>Prof.Dr Yehia Helmy<br>Prof.Dr Mohamed Belal</td>
+                            <td>30-8-2016</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Helal Ahmed</td>
+                            <td>Using Fuzzy Large Scale bi-Level Multi-Objective Quadratic Programming Problem</td>
+                            <td>Prof.Dr Osama Emam<br>Assoc.Prof Manal Abd el-Kader</td>
+                            <td>11-3-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Tasnim Abd el-Hamid</td>
+                            <td>Suggested Framework to Apply Agile Methodology in Egyptian Software Companies</td>
+                            <td>Assoc.Prof Mahmoud Abd el-Lattif<br>Assoc.Prof Sherief Abd el-Kader</td>
+                            <td>2-1-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mohamed Attia</td>
+                            <td>A Model for Assessing and Enhancing Efficiency of E-Learning Systems</td>
+                            <td>Prof.Dr Sayed Abd el-Gaber<br>Assoc.Prof Manal Abd el-Kader</td>
+                            <td>5-4-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Gehad Ahmed Soliman</td>
+                            <td>An Efficient Association Rule Hiding Algorithm for Privacy Preserving Data Mining</td>
+                            <td>Prof.Dr Ahmed Sharaf<br>Dr Laila Abd el-Latiff</td>
+                            <td>9-3-2017</td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Fify Mohamed</td>
+                            <td>A Proposed Integrated Business Intelligence Framework for Enhancing Healthcare Analytics</td>
+                            <td>Prof.Dr Ayman Khedr<br>Assoc.Prof Sherief Abd el-Kader</td>
+                            <td>3-1-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Khlod Mohamed</td>
+                            <td>Managing the Impact of Software Requirements Changes Using System Dynamics</td>
+                            <td>Assoc.Prof Mahmoud Abd el-Latif<br>Assoc.Prof Sherief Abd el-Kader<br></td>
+                            <td>2-1-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Abdallah Sayed</td>
+                            <td>A Proposed Interoperable Architecture for Cloud Based Educational Software Systems</td>
+                            <td>Prof.Dr Laila Elfangary<br>Assoc.Prof Ahmed Bahaa</td>
+                            <td>10-7-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed Sabry</td>
+                            <td>Using Stochastic Multi-Level Quadratic Programming Technique for Solving Bilateral Problems in Governmental Institution</td>
+                            <td>Prof.Dr Osama Emam<br>Dr Shaimaa ezzat</td>
+                            <td>22-1-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Hesham Mohamed Moustafa</td>
+                            <td>A Proposed Load Balancing Technique for Cloud Computing</td>
+                            <td>Prof.Dr Ayman Khedr<br>Assoc.Prof Mona Nasr</td>
+                            <td>21-9-2016</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed Abd el-Ghany Kasim</td>
+                            <td>A Proposed Secure Model for Cloud Computing Based Services Cloud Software as a Service</td>
+                            <td>Prof.Dr Mahaa Attia<br>Assoc.Prof Mona Nasr</td>
+                            <td>28-12-2016</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Mahmoud Mohamed Mohamed Bahlol</td>
+                            <td>Enhancing Lean Software Development Process Using Devops</td>
+                            <td>Prof.Dr Yehia Helmy<br>Assoc.Prof Ahmed Bahaa</td>
+                            <td>19-7-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Nesma Mahmoud Taher</td>
+                            <td>New Insight Into Customer Value Analysis Using Data Mining Techniques</td>
+                            <td>Assoc.Prof Doaa Saad<br>Dr Shaima Ezzat</td>
+                            <td>4-5-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Marwa Hosny</td>
+                            <td>تحسين استرجاع المعلومات للمكتبات الرقمية باستخدام الويب الدلالي<br>Enhancing Information Retrieval on Digital Libraries Using Semantic Web<br></td>
+                            <td>Assoc.Prof Mahmoud Abd el-Lattif<br>Dr Shaima Ezzat</td>
+                            <td>31-7-2017</td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Aya Mohamed Moustafa Ammar</td>
+                            <td>Mining Learning to Decision Making Support: the Case of Enhancing Students Performance Level in Helwan</td>
+                            <td>Prof.Dr Ayman Khedr<br>Assoc.prof Amany Abdou</td>
+                            <td>20-6-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Abdelrahaman Mohamed Helmy</td>
+                            <td>A Proposed Framework for Geospatial Information Systems Based On Cloud Computing For the Health Sector in Egypt<br></td>
+                            <td>Assoc.Prof Mona Nasr<br>Assoc.Prof Marwa Salah</td>
+                            <td>25-7-2017</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Amira Hassan Mohamed</td>
+                            <td>A Measuring Model of Critical Success Factors for Customer Relationship Management Using Data Mining Techniques</td>
+                            <td>Assoc.Prof Mahmoud Abd el-Lattif<br>Assoc.Prof Marwa Salah<br></td>
+                            <td>31-7-2017</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style="margin-top: 120px;" id="Phd-theses">
+                <h1 class="Phd-theses">List of Phd theses</h1>
+                <table class="PhD-theses">
+                    <thead>
+                        <tr>
+                            <th>Researcher name</th>
+                            <th>Thesis</th>
+                            <th>supervisors</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Add PhD theses here -->
+                        <tr>
+                            <td>Laila Abd el-Hamid</td>
+                            <td>Analyzing and Summarizing Online Opinions and Reviews Using Sentiment Analysis</td>
+                            <td>Prof.Dr Ahmed Sharaf<br>Assoc.Prof Doaa Saad</td>
+                            <td>26/10/2017</td>
+                        </tr>
+                        <tr>
+                            <td>Moustafa Thabet</td>
+                            <td>On Rough Multi-Level Large Scale Fractional Programming Problem</td>
+                            <td>Prof.Dr Mohamed Elsayed Omran<br>Prof.Dr Osama Emam</td>
+                            <td>21/12/2017</td>
+                        </tr>
+                        <tr>
+                            <td>Mohamed Abd el-Salam</td>
+                            <td>Proposed Framework to Construct Virtual Reality E-Learning Environment Based on Personalized Learning</td>
+                            <td>Prof.Dr Yehia Helmy<br>Prof.Dr Osama Emam<br>Prof.Dr Ayaman Khedr</td>
+                            <td>15/5/2018</td>
+                        </tr>
+                        <tr>
+                            <td>Mohamed Hassan Ibrahim</td>
+                            <td>A Proposed Parading for Analyzing and Mining Large Seale Online Communities to Maximize Business Returns</td>
+                            <td>Prof.Dr Laila El fangary<br>Assoc.Prof Mona Nasr<br>Dr Shaimaa Ezzat</td>
+                            <td>19/4/2018</td>
+                        </tr>
+                        <tr>
+                            <td>Amr Ali Saad Omar Abo hany</td>
+                            <td>Using Rough Multi-Level Integer Programming for Solving Fault Distortion Problem</td>
+                            <td>Prof.Dr Osama Emam<br>Assoc.Prof Marwa Salah<br>Dr Eman Moahmed</td>
+                            <td>16/4/2018</td>
+                        </tr>
+                        <tr>
+                            <td>Ali Mohamed Nabil Ismail</td>
+                            <td>Automatic Detection of Landmarks and Abnormalities in Eye Fundus Images</td>
+                            <td>Prof.Dr Atef GHalwash<br />
+                            Prof.Dr Aliaa Yousef</td>
+                            <td>27/9/2017</td>
+                        </tr>
+                        <tr>
+                            <td>Eman Monier Ali</td>
+                            <td>Data Mining Model for Children Brain Diseases Classification Based on Magnetic Resonance Imaging</td>
+                            <td>Prof.Dr Mohamed Hagag<br />
+                            Dr Ahmed Farag Ali</td>
+                            <td>27/11/2017</td>
+                        </tr>
+                        <tr>
+                            <td>Noha Hamad Abd el-Kader</td>
+                            <td>Service Performance Evaluation of Multi-level Resources in Cloud Computing</td>
+                            <td>Prof.Dr Moustafa Samy<br />
+                            Prof.Dr Amal Aboutabl</td>
+                            <td>15/1/2018</td>
+                        </tr>
+                        <tr>
+                            <td>Ali Nabil Elgohary</td>
+                            <td>Nano Computer Operating System Structure</td>
+                            <td>Prof.Dr Moustafa Samy<br />
+                            Assoc.Prof Hala Abd el-Galil</td>
+                            <td>14/5/2018</td>
+                        </tr>
+                        <tr>
+                            <td>Heba Hamdy Ali</td>
+                            <td>Depth-Based Human Activity Recognition</td>
+                            <td>Prof.Dr Aliaa Yousef<br />
+                            Dr Hossam Moftah</td>
+                            <td>16/5/2018</td>
+                        </tr>
+                        <tr>
+                            <td>Milad Abo el-khair</td>
+                            <td>Software Automated Testing Framework for Web Applications</td>
+                            <td>Prof.Dr Moustafa Samy<br />
+                            Prof.Dr Amal Aboutabl</td>
+                            <td>19/9/2018</td>
+                        </tr>
+                        <tr>
+                            <td>Rola Ahmed Magdy Hussien</td>
+                            <td>Security Model for Reusing Software Components On Cloud Environment</td>
+                            <td>Assoc,Prof Mahmoud Elkhouly</td>
+                            <td>26/6/2018</td>
+                        </tr>
+                        <tr>
+                            <td>Shereen Ahmed Mohamed Hussein</td>
+                            <td>A Framework for Automatic Semantic Image Annotation & Classification</td>
+                            <td>Prof.Dr Aliaa Yousef<br />
+                            Dr Hawida Yousry</td>
+                            <td>19/2/2017</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Shaimaa Mohamed Abd el-Hamid ouf</td>
+                            <td>A Proposed Paradigm for Smart E-Learning Ecosystem Based on Semantic Web</td>
+                            <td>Prof.Dr Yehia Helmy<br />
+                            Assoc.Prof Mahmoud Abd el-Latif</td>
+                            <td>31/7/2017</td>
+                        </tr>
+                        <tr>
+                            <td>Mohamed Izz Elden</td>
+                            <td>An Efficient Multimedia Transmission Framework Over Wireless Sensor Network</td>
+                            <td>Prof.Dr Atef Ghalwash<br />
+                            Prof.Dr Aliaa Yousef</td>
+                            <td>14/6/2016</td>
+                        </tr>
+                        <tr>
+                            <td>Denaa Refaat Mohamed Salem</td>
+                            <td>Virtualization in cloud computing</td>
+                            <td>Prof.Dr Moustafa Samy<br />
+                            Prof.Dr Mohamed Hagag</td>
+                            <td>2/6/2016</td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed Mohamed Yousef</td>
+                            <td>Learning Process Enhancement Using Educational Data Mining and Learning Analytics</td>
+                            <td>Prof.Dr Aliaa Yousef<br />
+                            Prof.Dr Mohamed Belal</td>
+                            <td>6/9/2016</td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed Salem Mahmoud</td>
+                            <td>Using Rough Multilevel Fractional Programming Technique to Improve Mobile Agent Routing</td>
+                            <td>Prof.Dr Mohamed Sayed Salem<br />
+                            Prof.Dr Osama Emam</td>
+                            <td>28/3/2016</td>
+                        </tr>
+                        <tr>
+                            <td>Marwa Mohamed Soliman</td>
+                            <td>Strategic Performance Measurement: Merging Balanced Scorecards and Business Intelligence Techniques</td>
+                            <td>Prof.Dr Ayman Khedr<br />
+                            Assoc.Prof Manal Abd el-kader</td>
+                            <td>27/10/2015</td>
+                        </tr>
+                        <tr>
+                            <td>Nermin Abd el-Hakim</td>
+                            <td>A Study of Uncertainty in Databases</td>
+                            <td>Prof.Dr ahmed sharaf<br />
+                            Assoc.Prof Doaa Saad</td>
+                            <td>18/2/2016</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+            <div id="Published-papers">
+                <p class="para">This section is under construction</p>
+                <img src="images/Something-went-wrong.png" alt="" height="400px" width="400px">
+            </div>
+            <div id="conferences">
+                <p class="para">This section is under construction</p>
+                <img src="images/Something-went-wrong.png" alt="" height="400px" width="400px">
+            </div>
+        </div>
+    </main>
+    <iframe  src="softwareengieer.html" width="1200" height="400" style="overflow-y: scroll; margin-left: 80px; margin-top: 200px; border:4px solid rgb(21, 0, 127) ;"title="description"></iframe>
+    <footer>
+            <div class="footer">
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <img src="images/footer_logo3.png" alt="">
+                    </div>
+                    <aside>
+                        <h1 class="contact">Contact Us</h1>       
+                        <div class="contact-info">
+                            <ul>
+                                <li><i class="fa fa-map-marker"></i> <strong>Address:</strong><br><br><span>Faculty of Computers and Information,<br> Ain Helwan, Helwan, Egypt.</span></li>
+                                <li><i class="fa fa-phone"></i> <strong>Phone:</strong><br><br><span>+20 2 2558 0746 Ext. 1039</span></li>
+                                <li><i class="fa fa-envelope"></i> <strong>Email:</strong><br><br><span><a href="mailto:info@fci.helwan.edu.eg">info@fci.helwan.edu.eg</a></span></li>
+                                <li><i class="fa fa-clock-o"></i> <strong>Working Days/Hours:</strong><br><br><span>Sun - Thu / 9:00 AM - 6:00 PM</span></li>            
+                            </ul>
+                        </div>
+                    </aside>
+                    <div>
+                        <ul class="footer-nav">
+                            <li><h1 style="font-size: 25px; padding-top: 32px;">links</h1></li>
+                            <li><a href="home.html">home</a></li>
+                            <li><a href="index1.html">ABOUT US</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-social-icons">
+                        <ul>
+                            <li><h1 style="font-size: 25px;" >social media</h1></li>
+                            <li><a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+    </footer>
+    <div class="Copyright">
+        <p>&copy; 2024 faculty of comuter scince and Artificial inteligence Helwan university.All rights reserved.</p>
+    </div>
+    <!-- content -->
+    <script>
+        function showContent(contentId) {
+            var contents = document.querySelectorAll('#contentContainer div');
+            for (var i = 0; i < contents.length; i++) {
+            contents[i].style.display = 'none';
+            contents[i].classList.remove('active');
+            }
+            setTimeout(function() {
+            var contentToShow = document.getElementById(contentId);
+            contentToShow.style.display = 'block';
+            contentToShow.offsetHeight;
+            contentToShow.classList.add('active');
+            }, 0);
+        }
+    </script>
+    <!-- audio -->
+    <script>
+            function stopBackgroundSound() {
+            var audio = document.querySelector('audio');
+            if (audio) {
+                audio.pause();
+                audio.currentTime = 0;
+            }
+        }
+        function startBackgroundSound() {
+            var audio = document.querySelector('audio');
+            if (audio) {
+                audio.play(); 
+            }
+        }
+    </script>
+    <!-- menu -->
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+    <!-- nav bar -->
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+            document.getElementById("nav").style.top = "0";
+            } else {
+            document.getElementById("nav").style.top = "-120px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+    <!-- css swap -->
+    <script>
+            document.getElementById('moon').onclick = function() {
+        var icon = this;
+        var styleSheet = document.getElementById('styleSheet');
+        if(icon.classList.contains('fa-moon')) {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+            styleSheet.setAttribute('href', 'css/Research-Dark.css')
+        }
+        else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+            styleSheet.setAttribute('href', 'css/Research-light.css');
+        }
+        
+        return false;
+        }
+    </script>
+    <!-- Research side -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const paragraphs = document.querySelectorAll('#Research1 p');
+    paragraphs.forEach(p => {
+        p.addEventListener('click', function() {
+        let ul = this.nextElementSibling;
+        let isHidden = getComputedStyle(ul).display === 'none';
+        ul.style.display = isHidden ? 'block' : 'none';
+    });
+    });
+});
+    </script>
+
+</body>
+</html>
