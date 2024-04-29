@@ -14,6 +14,7 @@
 
 :root {
     --back: #ffffff;
+    --primary-color1: #ffffff;
     --primary-color: #ffffff; /* white */
     --black: #000000; /* black */
     --black2:#111;
@@ -33,6 +34,7 @@
 
 .darktheme {
     --back: rgb(42, 41, 41);
+    --primary-color1: #ffffff;
     --primary-color: #1f1d1d; /* white */
     --black: #fff; /* black */
     --blue: blue; /* blue */
@@ -253,7 +255,7 @@
     font-family: aman;
     font-weight: 600;
     font-size:80px;
-    color: var(--primary-color);
+    color: var(--primary-color1);
     position: absolute;
     top: 250px;
     left: 50px;
