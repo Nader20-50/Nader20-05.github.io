@@ -36,7 +36,7 @@
     --back: rgb(42, 41, 41);
     --primary-color1: #ffffff;
     --primary-color: #1f1d1d; /* white */
-    --black: #fff; /* black */
+    --black: #ffffff; /* black */
     --blue: blue; /* blue */
     --font2: #fff;
     --c73d5e: #c73d5e; /* a shade of pink */
@@ -304,7 +304,7 @@
 }
 
 .first p{
-    color: var(--767676);
+    color: var(--black);
 }
 
 .first-title{
@@ -315,6 +315,7 @@
 }
 
 .first-title h1{
+    color: var(--black);
     margin: 0px 0px 50px 0px;
     font-size: 35px;
 }
@@ -326,6 +327,7 @@
 }
 
 .first-title a{
+    color: var(--black);
     text-decoration: none;
     font-size: 12px;
     display:inline ;
