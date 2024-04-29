@@ -547,3 +547,12 @@ hr {
         margin-bottom: 80px;
     }
 }
+@media (max-width: 1366px){
+    .course-img img{
+        margin-left: 120px;
+        height: 420px;
+        width: 720px; 
+        border-radius: 10px; 
+        margin-bottom: 120px;
+    }
+}
