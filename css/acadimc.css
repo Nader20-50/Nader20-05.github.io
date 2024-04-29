@@ -538,3 +538,12 @@ hr {
         flex-basis: 100%
     }
 }
+@media (max-width: 1536px){
+    .course-img img{
+        margin-left: 100px;
+        height: 450px;
+        width: 750px; 
+        border-radius: 10px; 
+        margin-bottom: 80px;
+    }
+}
