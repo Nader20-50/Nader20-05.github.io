@@ -549,10 +549,14 @@ hr {
 }
 @media (max-width: 1366px){
     .course-img img{
-        margin-left: 120px;
+        margin-left: 180px;
         height: 420px;
         width: 720px; 
         border-radius: 10px; 
         margin-bottom: 120px;
     }
+    footer{
+        margin-top: 300px;
+    
+}
 }
