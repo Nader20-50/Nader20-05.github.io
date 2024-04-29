@@ -560,39 +560,16 @@ hr {
     
 }
 }
-@media (min-width: 768px){
+@media (min-width: 1200px){
     .course-img img{
         margin-left: 280px;
         height: 420px;
-        width: 720px; 
+        width: 650px; 
         border-radius: 10px; 
-        margin-bottom: 120px;
+        margin-bottom: 180px;
     }
     footer{
-        margin-top: 300px;
- }
+        margin-top: 400px;
+    
 }
-@media (min-width: 992px){
-    .course-img img{
-        margin-left: 260px;
-        height: 420px;
-        width: 720px; 
-        border-radius: 10px; 
-        margin-bottom: 120px;
-    }
-    footer{
-        margin-top: 300px;
-}
-}
-@media (min-width: 1200px){
-    .course-img img{
-        margin-left: 250px;
-        height: 420px;
-        width: 720px; 
-        border-radius: 10px; 
-        margin-bottom: 130px;
-    }
-    footer{
-        margin-top: 300px;
-    }
 }
