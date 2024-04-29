@@ -251,7 +251,7 @@
     font-family: aman;
     font-weight: 600;
     font-size:80px;
-    color: var(--fontwhite);
+    color: var(--black);
     position: absolute;
     top: 250px;
     left: 50px;
@@ -303,7 +303,7 @@
 }
 
 .first-title{
-    color:var(--font2);
+    color:var(--black);
     position: absolute;
     top: 190px;
     width: 350px;
@@ -326,7 +326,7 @@
     text-decoration: none;
     font-size: 12px;
     display:inline ;
-    color: var(--font2);
+    color: var(--black);
 }
 
 .first-title a:hover{
