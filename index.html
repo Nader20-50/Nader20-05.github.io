@@ -6,15 +6,51 @@
     <title>FCAIH</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script>
+        function setCookie(cname,cvalue,exdays) {
+          const d = new Date();
+          d.setTime(d.getTime() + (exdays*24*60*60*1000));
+          let expires = "expires=" + d.toUTCString();
+          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+        
+        function getCookie(cname) {
+          let name = cname + "=";
+          let decodedCookie = decodeURIComponent(document.cookie);
+          let ca = decodedCookie.split(';');
+          for(let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+              c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+            }
+          }
+          return "";
+        }
+        
+        function checkCookie() {
+          let user = getCookie("username");
+          if (user != "") {
+            alert("Welcome again " + user);
+          } else {
+             user = prompt("Please enter your name:","");
+             if (user != "" && user != null) {
+               setCookie("username", user, 30);
+             }
+          }
+        }
+        </script>
 </head>
-<body>
+<body class="body1" onload="checkCookie()">
     <section class="home">
         <div class="home-nav">
             <div class="relative-nav">
             <div class="iconhelwan">
-                <a href="index.html"><img src="./img/fcai_logo_final_en.png" alt=""></a>
+                <img src="./img/fcai_logo_final_en.png" alt="">
             </div>
             <ul>
                 <li id="icon1">
@@ -43,17 +79,18 @@
                 <li>
                     <a href="javascript:void(0)" class="openbtn" onclick="openNav()"><i class="fa-solid fa-bars"></i>MENU</a>
                 </li> </ul>
-                    <div id="myNav" class="menu">
+                  <div id="myNav" class="menu">
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> <i class="fa-solid fa-x"></i> </a>
                         <div class="menu-continer">
                             <div class="menu-content">
-                                <a href="index.html">Home</a>
-                                <a href="index1.html">ABOUT US</a>
-                                <a href="acadimc.html">ACADEMIC</a>
-                                <a href="index2.html">Postgraduate Studies</a>
-                                <a href="Reserach.html">RESEARCH</a> 
-                                <a href="departments.html">Departments</a>
-                                <a href="stuff.html">Stuff</a>  
+                                <a href="#home">Home</a>
+                                <a href="#">ABOUT US</a>
+                                <a href="#">ACADEMIC</a>
+                                <a href="#">Postgraduate Studies</a>
+                                <a href="#">RESEARCH</a>
+                                <a href="#">STUDENT AFFAIRS</a>
+                                <a href="#">Units & Centers</a>
+                                <a href="#">Quality Assurance</a>   
                 
                                 <script>
                                     function openNav() {
@@ -69,7 +106,7 @@
                             LOGIN</button></a> 
                         </div>
                     </div>
-
+  
             <button class="hero-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
         </div> 
@@ -133,7 +170,6 @@
                             <p>concerned with teaching the basics of computer science,
                                 logical design and computer mathematics. The department is also concerned 
                                 with teaching software of its various types and artificial intelligence</p>
-                                <a style="text-decoration: underline; color: aliceblue; padding-bottom: 10px;" href="CS.html">learn more</a>
                         </div>
                     </div>
                 </div>
@@ -149,7 +185,6 @@
                                 <p>is concerned with teaching the basics of information systems, 
                                     analysis, design and applications and teaching database systems of various types, data mining 
                                     , knowledge discovery, and management of information centers.</p>
-                                    <a style="text-decoration: underline; color: aliceblue; padding-bottom: 10px;" href="is-info.html">learn more</a>
                             </div>
                         </div>
                     </div>
@@ -163,8 +198,7 @@
                             <div class="flip-card-back" style="background-color: #47a447;">
                                 <p class="title"  style="margin-top: 10px; font-size: 20px; font-weight: 400; margin-bottom: 30px;">Information <br> <span>technology</span></p>
                                 <p>The Information technology program is concerned with teaching the basics of information technology,
-                                    pattern and letters recognition and digital signal processing</p>
-                                    <a style="text-decoration: underline; color: aliceblue; padding-bottom: 10px;" href="information-tech.html">learn more</a>
+                                     pattern and letters recognition and digital signal processing</p>
                             </div>
                         </div>
                     </div>
@@ -178,9 +212,9 @@
                                     <div class="flip-card-back" style="background-color: #17a2b8; padding-top: 0;">
                                         <p class="title" style="margin-top: 10px; font-size: 20px; font-weight: 400; margin-bottom: 30px;">Medical <br> <span>Informatics</span></p>
                                         <p>Specialized in the design and development of information technology and its
-                                            applications in a practical way within medical institutions. This software
-                                            helps provide doctors and surgeons with accurate quantitative data</p>
-                                            <a style="text-decoration: underline; color: aliceblue; padding-bottom: 10px;" href="medi-info.html">learn more</a>
+                                             applications in a practical way within medical institutions. This software
+                                             helps provide doctors and surgeons with accurate quantitative data</p>
+
                                         </div>
                                 </div>
                             </div>
@@ -196,7 +230,6 @@
                                             <p>concerned with studying all aspects of high-quality software production,
                                                  taking into account user requirements. This 
                                                 includes various stages of software development which include problem analysis</p>
-                                                <a style="text-decoration: underline; color: aliceblue; padding-bottom: 10px;" href="softwareengieer.html">learn more</a>
                                         </div>
                                     </div>
                                 </div>
@@ -279,26 +312,7 @@
             
     
             </script>
-            <!-- <script>
-                var btn = document.getElementById("btn1");
-                
-                function openrow() {
-                    var content = document.getElementById("rowcont");
-                    if (content.style.display === "none") {
-                        content.style.display = "flex";
-                        btn.innerHTML = "See Less";
-                        btn.classList.add("btn");
-                        btn.classList.add("closenbtn")
-                    } else {
-                        content.style.display = "none";
-                        btn.innerHTML = "See More";
-                        btn.classList.add("btn")
-                    }
-                    return false;
-                }
             
-                btn.addEventListener('click', openrow);
-            </script> -->
         </div>    
     </section>
     
@@ -350,8 +364,7 @@
     
                 <div class="col">
                     <h3>Address <div class="underline"><span></span></div></h3>
-                    <p>ITPL Road</p>
-                    <p>Whitefield, Bangalore</p>
+                    <p>helwan Road</p>
                     <p>Ain Helwan, PIN 560066, Eygpt</p>
                     <p class="email-id"><i class="fa-solid fa-envelope"></i>info@fci.helwan.edu.eg</p>
                     <h4>+20 2 2558 0746 Ext. 1039</h4>
@@ -360,9 +373,9 @@
                 <div class="col">
                     <h3>Links <div class="underline"><span></span></div></h3>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="#">Services</a></li>
-                        <li><a href="index1.html">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
                         <li><a href="#">News</a></li>
                         <li><a href="#">Contacts</a></li>
                     </ul>
