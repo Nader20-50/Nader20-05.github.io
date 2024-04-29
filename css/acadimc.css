@@ -568,15 +568,21 @@ hr {
         border-radius: 10px; 
         margin-bottom: 120px;
     }
+    footer{
+        margin-top: 300px;
+ }
 }
 @media (min-width: 992px){
     .course-img img{
-        margin-left: 240px;
+        margin-left: 260px;
         height: 420px;
         width: 720px; 
         border-radius: 10px; 
         margin-bottom: 120px;
     }
+    footer{
+        margin-top: 300px;
+}
 }
 @media (min-width: 1200px){
     .course-img img{
@@ -585,5 +591,8 @@ hr {
         width: 720px; 
         border-radius: 10px; 
         margin-bottom: 130px;
+    }
+    footer{
+        margin-top: 300px;
     }
 }
